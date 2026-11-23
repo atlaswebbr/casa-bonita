@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casa Bonita | Móveis &amp; Ofertas para a Sua Casa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Fredoka', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            bonitaTerracotta: '#C85A32',
+            bonitaTerracottaDark: '#9E3F1D',
+            bonitaCream: '#FFF9F2',
+            bonitaSage: '#2F6F5E',
+            bonitaInk: '#241B16',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-bonitaCream text-bonitaInk antialiased selection:bg-bonitaTerracotta selection:text-white">
+
+  <!-- Faixa superior da Atlas Web -->
+  <div class="bg-bonitaInk text-amber-100 text-xs py-2 px-4 text-center">
+    Vitrine conceitual criada pela <span class="font-semibold text-amber-300">Atlas Web</span> • Mostrando como destacar móveis e ofertas no WhatsApp.
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-orange-100 shadow-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+      <a href="#topo" class="flex items-center gap-3 min-w-0">
+        <img
+          src="logo-casa-bonita.jpg"
+          alt="Casa Bonita"
+          onerror="this.style.display='none'; document.getElementById('logo-fallback-cb').classList.remove('hidden');"
+          class="w-10 h-10 rounded-full object-cover border border-bonitaTerracotta/40 shrink-0"
+        />
+        <div id="logo-fallback-cb" class="hidden w-10 h-10 rounded-full bg-bonitaTerracotta text-white font-display font-bold text-base flex items-center justify-center shrink-0">
+          CB
+        </div>
+        <div class="truncate">
+          <span class="font-display font-bold text-bonitaInk text-lg sm:text-xl block leading-tight truncate">
+            Casa Bonita
+          </span>
+          <span class="text-[11px] font-medium text-bonitaTerracottaDark block truncate">
+            @casabonita.ba • A sua casa mais bonita
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-stone-600">
+        <a href="#vitrine" class="hover:text-bonitaTerracotta transition">Catálogo &amp; Ofertas</a>
+        <a href="#atendimento" class="hover:text-bonitaTerracotta transition">Atendimento</a>
+        <a href="#regras" class="hover:text-bonitaTerracotta transition">Regras &amp; Dúvidas</a>
+      </nav>
+
+      <a
+        href="https://whats.link/casabonita2"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-bonitaSage hover:bg-emerald-800 text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-full transition shrink-0"
+      >
+        Chamar no WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="topo" class="pt-10 pb-14 sm:pt-16 sm:pb-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="bg-gradient-to-br from-orange-100/80 via-white to-emerald-50/70 border border-orange-200/70 rounded-3xl p-6 sm:p-12 grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 space-y-5">
+          <div class="inline-flex items-center gap-2 bg-white text-bonitaTerracottaDark border border-orange-200 text-xs font-bold px-3.5 py-1.5 rounded-full">
+            <span>Móveis com ótimo custo-benefício • Promoções da Loja</span>
+          </div>
+
+          <h1 class="font-display text-3xl sm:text-5xl font-bold text-bonitaInk leading-[1.08]">
+            Deixe a sua casa mais bonita sem pesar no bolso.
+          </h1>
+
+          <p class="text-stone-600 text-base sm:text-lg leading-relaxed max-w-2xl">
+            Na <strong>Casa Bonita</strong>, você encontra sofás, conjuntos de jantar, painéis para TV e móveis que transformam a sala, o quarto e o dia a dia com condições especiais.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-3 pt-2">
+            <a
+              href="#vitrine"
+              class="bg-bonitaTerracotta hover:bg-bonitaTerracottaDark text-white font-semibold px-6 py-3.5 rounded-full transition text-center"
+            >
+              Ver Móveis &amp; Promoções
+            </a>
+            <a
+              href="https://whats.link/casabonita2"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-bonitaSage hover:bg-emerald-800 text-white font-semibold px-6 py-3.5 rounded-full transition text-center"
+            >
+              Falar no WhatsApp Agora
+            </a>
+          </div>
+        </div>
+
+        <!-- Cartão de destaque rápido -->
+        <div class="lg:col-span-5 bg-white rounded-2xl p-6 border border-orange-100 shadow-md space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-wider text-bonitaTerracotta">Destaques do Feed</span>
+            <span class="text-xs font-semibold bg-amber-100 text-amber-900 px-2.5 py-1 rounded-full">Ofertas</span>
+          </div>
+
+          <div class="space-y-3">
+            <div class="p-3.5 rounded-xl bg-bonitaCream border border-orange-100 flex items-center justify-between gap-3">
+              <div>
+                <p class="font-display font-bold text-bonitaInk text-base">Conjunto de Jantar</p>
+                <p class="text-xs text-stone-500">Visual clássico para sala de jantar</p>
+              </div>
+              <span class="font-display font-bold text-bonitaTerracottaDark text-sm whitespace-nowrap">A partir de R$ 1.590</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-bonitaCream border border-orange-100 flex items-center justify-between gap-3">
+              <div>
+                <p class="font-display font-bold text-bonitaInk text-base">Painel para TV</p>
+                <p class="text-xs text-stone-500">Design moderno e funcional</p>
+              </div>
+              <span class="font-display font-bold text-bonitaTerracottaDark text-sm whitespace-nowrap">A partir de R$ 990</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-bonitaCream border border-orange-100 flex items-center justify-between gap-3">
+              <div>
+                <p class="font-display font-bold text-bonitaInk text-base">Sofás &amp; Estofados</p>
+                <p class="text-xs text-stone-500">Conforto para toda a família</p>
+              </div>
+              <span class="font-display font-bold text-bonitaSage text-sm whitespace-nowrap">Consultar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vitrine interativa com seletor de item e mensagem pronta no WhatsApp -->
+  <section id="vitrine" class="py-14 sm:py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-bonitaTerracotta">Catálogo &amp; Promoções</span>
+          <h2 class="font-display text-2xl sm:text-4xl font-bold text-bonitaInk mt-1">
+            Escolha o móvel e chame direto no WhatsApp
+          </h2>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+          <button type="button" onclick="filtrarItens('todos', this)" class="cb-tab bg-bonitaTerracotta text-white text-xs font-bold px-4 py-2 rounded-full cursor-pointer">
+            Todos os Itens
+          </button>
+          <button type="button" onclick="filtrarItens('sala', this)" class="cb-tab bg-white hover:bg-orange-50 text-stone-700 border border-orange-200 text-xs font-bold px-4 py-2 rounded-full cursor-pointer">
+            Sala &amp; Estar
+          </button>
+          <button type="button" onclick="filtrarItens('quarto', this)" class="cb-tab bg-white hover:bg-orange-50 text-stone-700 border border-orange-200 text-xs font-bold px-4 py-2 rounded-full cursor-pointer">
+            Quarto &amp; Casa
+          </button>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 mb-8">
+        <article data-tipo="sala" class="cb-item bg-white rounded-2xl p-6 border border-orange-100 shadow-xs flex flex-col justify-between">
+          <div>
+            <span class="text-[11px] font-bold uppercase text-bonitaTerracotta bg-orange-50 px-3 py-1 rounded-full">Sala de Estar</span>
+            <h3 class="font-display text-2xl font-bold text-bonitaInk mt-3">Sofás &amp; Estofados</h3>
+            <p class="text-sm text-stone-600 mt-2 leading-relaxed">
+              Opções acolchoadas e práticas para deixar a sala mais convidativa no dia a dia e nas visitas.
+            </p>
+          </div>
+          <button
+            type="button"
+            onclick="selecionarItem('Sofás & Estofados')"
+            class="mt-5 w-full py-2.5 px-4 rounded-xl bg-orange-50 hover:bg-bonitaTerracotta hover:text-white text-bonitaTerracottaDark font-semibold text-xs transition cursor-pointer"
+          >
+            Selecionar este item
+          </button>
+        </article>
+
+        <article data-tipo="sala" class="cb-item bg-white rounded-2xl p-6 border border-orange-100 shadow-xs flex flex-col justify-between">
+          <div>
+            <span class="text-[11px] font-bold uppercase text-bonitaSage bg-emerald-50 px-3 py-1 rounded-full">Jantar &amp; Reunião</span>
+            <h3 class="font-display text-2xl font-bold text-bonitaInk mt-3">Conjunto de Jantar</h3>
+            <p class="text-sm text-stone-600 mt-2 leading-relaxed">
+              Mesa e cadeiras pensadas para reunir a família com praticidade e visual caprichado.
+            </p>
+          </div>
+          <button
+            type="button"
+            onclick="selecionarItem('Conjunto de Jantar')"
+            class="mt-5 w-full py-2.5 px-4 rounded-xl bg-orange-50 hover:bg-bonitaTerracotta hover:text-white text-bonitaTerracottaDark font-semibold text-xs transition cursor-pointer"
+          >
+            Selecionar este item
+          </button>
+        </article>
+
+        <article data-tipo="quarto" class="cb-item bg-white rounded-2xl p-6 border border-orange-100 shadow-xs flex flex-col justify-between">
+          <div>
+            <span class="text-[11px] font-bold uppercase text-amber-800 bg-amber-50 px-3 py-1 rounded-full">Ambiente &amp; Organização</span>
+            <h3 class="font-display text-2xl font-bold text-bonitaInk mt-3">Painéis &amp; Móveis do Lar</h3>
+            <p class="text-sm text-stone-600 mt-2 leading-relaxed">
+              Painéis para TV e móveis que organizam o espaço e valorizam a decoração sem complicação.
+            </p>
+          </div>
+          <button
+            type="button"
+            onclick="selecionarItem('Painéis & Móveis do Lar')"
+            class="mt-5 w-full py-2.5 px-4 rounded-xl bg-orange-50 hover:bg-bonitaTerracotta hover:text-white text-bonitaTerracottaDark font-semibold text-xs transition cursor-pointer"
+          >
+            Selecionar este item
+          </button>
+        </article>
+      </div>
+
+      <!-- Barra de ação direta com o item escolhido -->
+      <div class="bg-white rounded-2xl p-5 sm:p-6 border border-orange-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div>
+          <p class="text-xs font-bold uppercase text-stone-400">Item selecionado para consulta</p>
+          <p id="item-escolhido-texto" class="font-display text-xl font-bold text-bonitaInk">
+            Sofás &amp; Estofados
+          </p>
+          <p class="text-xs text-stone-500 mt-0.5">
+            Clique ao lado para abrir o WhatsApp da Casa Bonita e conferir disponibilidade e condições.
+          </p>
+        </div>
+
+        <a
+          id="btn-whatsapp-item"
+          href="https://whats.link/casabonita2"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-bonitaSage hover:bg-emerald-800 text-white font-semibold text-sm px-6 py-3 rounded-xl transition shrink-0"
+        >
+          Consultar no WhatsApp →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Atendimento e Regras -->
+  <section id="atendimento" class="py-14 bg-white border-y border-orange-100">
+    <div id="regras" class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8">
+      <div class="p-6 rounded-2xl bg-bonitaCream border border-orange-100 space-y-3">
+        <h3 class="font-display text-2xl font-bold text-bonitaInk">Atendimento &amp; Clientes</h3>
+        <p class="text-sm text-stone-600 leading-relaxed">
+          Tire dúvidas sobre medidas, cores, formas de pagamento e promoções vigentes direto pelo canal oficial da loja no WhatsApp ou no Instagram <strong>@casabonita.ba</strong>.
+        </p>
+        <div class="pt-2 flex flex-wrap gap-3">
+          <a
+            href="https://whats.link/casabonita2"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-bonitaTerracotta hover:bg-bonitaTerracottaDark text-white text-xs font-bold px-4 py-2.5 rounded-lg transition"
+          >
+            WhatsApp Casa Bonita
+          </a>
+          <a
+            href="https://www.instagram.com/casabonita.ba/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-white hover:bg-orange-50 text-bonitaInk border border-orange-200 text-xs font-bold px-4 py-2.5 rounded-lg transition"
+          >
+            Instagram (@casabonita.ba)
+          </a>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-bonitaCream border border-orange-100 space-y-3">
+        <h3 class="font-display text-2xl font-bold text-bonitaInk">Regras &amp; Condições</h3>
+        <p class="text-sm text-stone-600 leading-relaxed">
+          As ofertas, condições de entrega, montagem e regras de compra podem variar conforme o lote ou promoção ativa — confirme sempre todos os detalhes com a equipe antes de fechar o pedido.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-bonitaInk text-stone-300 py-7 text-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <span>Casa Bonita (@casabonita.ba) • Móveis para o seu lar</span>
+      <span>Demonstração feita pela <strong class="text-amber-300">Atlas Web</strong></span>
+    </div>
+  </footer>
+
+  <script>
+    const LINK_CB = 'https://whats.link/casabonita2';
+
+    function filtrarItens(tipo, botaoClicado) {
+      document.querySelectorAll('.cb-tab').forEach(btn => {
+        btn.className = 'cb-tab bg-white hover:bg-orange-50 text-stone-700 border border-orange-200 text-xs font-bold px-4 py-2 rounded-full cursor-pointer';
+      });
+      botaoClicado.className = 'cb-tab bg-bonitaTerracotta text-white text-xs font-bold px-4 py-2 rounded-full cursor-pointer';
+
+      document.querySelectorAll('.cb-item').forEach(card => {
+        const itemTipo = card.getAttribute('data-tipo');
+        if (tipo === 'todos' || itemTipo === tipo) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    function selecionarItem(nomeItem) {
+      document.getElementById('item-escolhido-texto').textContent = nomeItem;
+      document.getElementById('btn-whatsapp-item').textContent = `Consultar "${nomeItem}" no WhatsApp →`;
+    }
+  </script>
+</body>
+</html>
